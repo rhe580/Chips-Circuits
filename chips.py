@@ -73,6 +73,21 @@ class Netlist():
 
         print(self.path[connection])
     
+    def check_if_chip(self, next_coor):
+        for key in self.gates:
+            # check if next point is a gate
+            if next_coor in self.gates[key]:
+                return True
+        return False
+
+    # def check_if_good_chip(self, next_coor)
+    #     if self.gates[next_coor]
+    #         return True
+    #     else:
+    #         return False
+        
+
+    
     
 
 
